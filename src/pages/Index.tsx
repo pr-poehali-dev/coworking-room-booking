@@ -130,13 +130,13 @@ const Index = () => {
         </div>
       </nav>
 
-      <section id="hero" className="py-20 md:py-32 bg-gradient-to-b from-accent to-background">
+      <section id="hero" className="py-20 md:py-32 bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
-            <h2 className="text-4xl md:text-6xl font-bold font-heading mb-6 text-foreground">
+            <h2 className="text-4xl md:text-6xl font-bold font-heading mb-6 text-white">
               Пространство для продуктивной работы
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8">
+            <p className="text-lg md:text-xl text-gray-300 mb-8">
               Уютный коворкинг с комфортной атмосферой для работы, встреч и консультаций. 
               Выберите удобное пространство и забронируйте онлайн.
             </p>
@@ -145,7 +145,7 @@ const Index = () => {
                 <Icon name="Calendar" className="mr-2" size={20} />
                 Забронировать место
               </Button>
-              <Button size="lg" variant="outline" className="text-lg" onClick={() => scrollToSection('тарифы')}>
+              <Button size="lg" variant="outline" className="text-lg bg-transparent border-2 border-secondary text-white hover:bg-secondary" onClick={() => scrollToSection('тарифы')}>
                 Посмотреть тарифы
               </Button>
             </div>
@@ -179,7 +179,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="тарифы" className="py-20 bg-secondary/30">
+      <section id="тарифы" className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">Тарифы</h2>
@@ -322,12 +322,12 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="о нас" className="py-20 bg-secondary/30">
+      <section id="о нас" className="py-20 bg-gradient-to-br from-gray-900 to-black text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6 text-center">О коворкинге</h2>
-            <Card>
-              <CardContent className="p-8 space-y-4 text-muted-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6 text-center text-white">О коворкинге</h2>
+            <Card className="bg-gray-800/50 border-gray-700">
+              <CardContent className="p-8 space-y-4 text-gray-300">
                 <p>
                   CoWork Space — это современное пространство для комфортной и продуктивной работы в центре города. 
                   Мы создали атмосферу, где каждый находит вдохновение и может полностью сосредоточиться на своих задачах.
@@ -340,15 +340,15 @@ const Index = () => {
                 <div className="grid md:grid-cols-3 gap-6 pt-6">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-primary font-heading">200+</div>
-                    <div className="text-sm">Довольных клиентов</div>
+                    <div className="text-sm text-gray-400">Довольных клиентов</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-primary font-heading">24/7</div>
-                    <div className="text-sm">Доступ для абонентов</div>
+                    <div className="text-3xl font-bold text-secondary font-heading">24/7</div>
+                    <div className="text-sm text-gray-400">Доступ для абонентов</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-primary font-heading">500м²</div>
-                    <div className="text-sm">Площадь пространства</div>
+                    <div className="text-sm text-gray-400">Площадь пространства</div>
                   </div>
                 </div>
               </CardContent>
@@ -425,7 +425,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="faq" className="py-20 bg-secondary/30">
+      <section id="faq" className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6 text-center">Частые вопросы</h2>
@@ -449,7 +449,7 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="bg-foreground text-background py-12">
+      <footer className="bg-gradient-to-br from-black via-gray-950 to-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left">
